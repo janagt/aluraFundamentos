@@ -34,5 +34,26 @@
     /* flex-direction: column;
     flex-wrap: wrap; */
     flex-flow: column wrap;
-    height: 16rem; /* para o navegador entender melhor a quebra de linha */
+    height: 16rem; /* para o navegador entender melhor a quebra de linha (250px) */
 }
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    /* margin: 1%; não é necessário */
+}
+
+/*
+para modificar em 4 em 4 elemento 
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0%;
+}
+
+para modificar em 4 em 4 elemento + 1
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0%;
+} */
