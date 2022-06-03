@@ -57,3 +57,46 @@ para modificar em 4 em 4 elemento + 1
 .conteudoPrincipal-cursos-link:nth-child(4n+1) {
     margin-left: 0%;
 } */
+
+/* PARTE MOBILE */
+@media(max-width:768px /* 960px */) {
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal .container {
+        align-items: initial;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height:auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center; /* troca de eixo quando usamos o /\ column */
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        margin: 0;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+}
