@@ -1,0 +1,68 @@
+.flexContainer:last-child {
+    margin-top: 2em;
+}
+
+body {
+    margin: 0; padding: 0;
+}
+
+div {
+    height: 50px; width: 50px;
+}
+
+div:nth-child(1) {
+    background: red;
+    /* width: 80px;
+    height: 80px; */
+}
+
+div:nth-child(2) {
+    background: blue;
+}
+
+div:nth-child(3) {
+    background: green;
+}
+
+div:nth-child(4) {
+    background: yellow;
+}
+
+div:nth-child(5) {
+    background: pink;
+}
+
+div:nth-child(6) {
+    background: black;
+}
+
+div:nth-child(2) {
+    background: orange;
+}
+
+div:nth-child(2) {
+    background: silver;
+}
+
+.flexContainer {
+    display: flex;
+   /*  justify-content: space-around;
+    align-items: center; muda o eixo com o flex direction \/ - faz agora o "papel" de justify-content
+    flex-direction: column; */
+}
+
+.flexItem {
+    flex-grow: 1; /* padrao: flex-grow 0 */
+    /* flex-shrink: 0; impede o elemento de diminuir - navegador da zoom out */
+    flex-shrink: 2; /* padrao: flex-shrink 1*/
+/*     flex-basis: 20%; valor absoluto para os elementos */
+}
+
+.primeiro {
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+/* o calculo: 100 (da pg) / 5 (total de flex grow) = 20 (px)
+cada elemento tem 50px em numa pg de 200px: flex-gow 2: total de 10px e flex-grow 1: 30px 
+FORMA ABREVIADA: flex: x (grow) x (shrink) x% (basis); */
